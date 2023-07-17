@@ -1,8 +1,7 @@
+import styles from "./coinPage.module.css";
+
 function coinPage() {
-  return (
-    <>
-    </>
-  )
+  return <div className={styles.container}></div>;
 }
 
-export default coinPage
+export default coinPage;
