@@ -66,10 +66,10 @@
 
 @keyframes menu {
   0% {
-    transform: translateX(200px);
+    transform: translateY(-400px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -80,10 +80,12 @@
 
 @keyframes hide {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
+
   100% {
-    transform: translateX(200px);
+    display: none;
+    transform: translateY(-400px);
   }
 }
 

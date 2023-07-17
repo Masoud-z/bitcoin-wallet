@@ -38,10 +38,10 @@ function CoinPriceDetail({ img, name, title, amount, price, change }) {
       <div className={styles.overalContainer}>
         <div
           className={`${styles.ordersContainer} ${
-            detailOpen && styles.detailOpen
+            !detailOpen && styles.detailOpen
           }`}
         >
-          <div className={`${styles.orders} `}>
+          <div className={styles.orders}>
             <div className={styles.orderBtn}>Buy</div>
             <div className={styles.orderBtn}>Sell</div>
           </div>
