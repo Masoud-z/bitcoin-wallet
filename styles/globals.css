@@ -2,8 +2,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: linear 0.3s;
 }
 
-.body {
+body {
   background-color: #f3f5f9;
+  min-height: 100vh;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+.active {
+  color: #585b5e;
 }
