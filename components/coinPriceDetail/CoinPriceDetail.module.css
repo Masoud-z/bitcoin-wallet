@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.namInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #4c5968;
+  text-transform: capitalize;
+}
+
+.title {
+  color: #aeb8c4;
+  text-transform: uppercase;
+}
+
+.amount {
+  color: #4c5968;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.price {
+  width: 100%;
+  margin-top: -8px;
+  color: #aeb8c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change {
+  padding: 5px 0px;
+  width: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #00ffff;
+  color: #fff;
+}
+
+.minus {
+  background-color: red;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #adb7c3;
+}
+
+.overalContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ordersContainer {
+  width: 100%;
+  animation: orders 0.4s linear;
+}
+
+@keyframes orders {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.orders {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.detailOpen {
+  display: none;
+}
+
+.orderBtn {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #00ffff;
+}
+
+.orderBtn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.orderBtn:last-child {
+  background-color: red;
+}

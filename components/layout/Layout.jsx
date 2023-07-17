@@ -52,7 +52,9 @@ function Layout(props) {
           </li>
         </ul>
       </header>
+      <div className={styles.child}>
       {props.children}
+      </div>
       <footer className={styles.footer}>
         <FontAwesomeIcon icon={faWallet} className={`${styles.btn} active`} />
         <FontAwesomeIcon icon={faCompass} className={styles.btn} />

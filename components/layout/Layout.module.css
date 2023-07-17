@@ -19,6 +19,9 @@
   color: #4c5968;
   font-size: 1.5rem;
 }
+.child {
+  padding: 0 15px;
+}
 
 .footer {
   display: flex;
