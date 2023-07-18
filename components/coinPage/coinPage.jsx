@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CoinPriceDetail from "@/components/coinPriceDetail/CoinPriceDetail";
 import PriceChart from "@/components/priceChart/PriceChart";
-import styles from "@/components/coinPage/CoinPage.module.css";
+import styles from "./CoinPage.module.css";
 import OrderCTA from "@/components/orderCTA/OrderCTA";
 
 const coin = {
