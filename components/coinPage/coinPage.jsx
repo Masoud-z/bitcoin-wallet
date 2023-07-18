@@ -1,8 +1,8 @@
 import { useState } from "react";
-import CoinPriceDetail from "../coinPriceDetail/CoinPriceDetail";
-import PriceChart from "../priceChart/PriceChart";
+import CoinPriceDetail from "@/components/coinPriceDetail/CoinPriceDetail";
+import PriceChart from "@/components/priceChart/PriceChart";
 import styles from "./CoinPage.module.css";
-import OrderCTA from "../orderCTA/orderCTA";
+import OrderCTA from "@/components/orderCTA/OrderCTA";
 
 const coin = {
   img: "/bit.png",
