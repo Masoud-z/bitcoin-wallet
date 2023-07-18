@@ -1,7 +1,35 @@
 .container {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+}
+
+.period {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aeb8c4;
+}
+
+.period > div {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
+.period > div:hover {
+  cursor: pointer;
+  color: #585b5e;
+}
+
+.active {
+  color: #fff;
+  background-color: #adb7c3;
 }

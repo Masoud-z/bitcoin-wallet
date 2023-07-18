@@ -29,14 +29,14 @@
 .chart {
   width: 100%;
   margin-left: -10px;
-  margin-bottom: -49px;
+  margin-bottom: -28px;
   position: relative;
 }
 
 .livePriceContainer {
   position: absolute;
-  bottom: 12vh;
-  left: 9vw;
+  bottom: 11vh;
+  left: 7vw;
   display: flex;
   justify-content: center;
   align-items: center;

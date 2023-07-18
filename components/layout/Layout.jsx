@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSearchParams } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpFromBracket,
   faBell,
@@ -11,9 +11,9 @@ import {
   faGear,
   faWallet,
 } from "@fortawesome/free-solid-svg-icons";
+import { faFile, faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "./Layout.module.css";
-import { faFile, faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 
 function Layout(props) {
   const searchParams = useSearchParams();

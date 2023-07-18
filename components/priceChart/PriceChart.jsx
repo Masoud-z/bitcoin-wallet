@@ -3,18 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 import {
-  LineChart,
-  Line,
   XAxis,
-  YAxis,
-  CartesianGrid,
   Tooltip,
-  Brush,
   AreaChart,
   Area,
   ReferenceDot,
-  ComposedChart,
-  Scatter,
   ResponsiveContainer,
 } from "recharts";
 
@@ -27,7 +20,7 @@ const CustomReferenceDot = (props) => {
       <animate
         attributeName="r"
         from="2"
-        to="5"
+        to="6"
         dur="1.5s"
         begin="0s"
         repeatCount="indefinite"
@@ -36,22 +29,7 @@ const CustomReferenceDot = (props) => {
   );
 };
 
-const data = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-];
-
-function PriceChart({ title, current, lower, higher }) {
+function PriceChart({ title, current, lower, higher, priceData }) {
   const [show, setShow] = useState(false);
   useEffect(() => {
     setShow(true);
@@ -82,7 +60,7 @@ function PriceChart({ title, current, lower, higher }) {
               left: 0,
             }}
           >
-            <AreaChart data={data} syncId="anyId">
+            <AreaChart data={priceData} syncId="anyId">
               <defs>
                 <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#ff8f17" stopOpacity={0.8} />
@@ -94,14 +72,14 @@ function PriceChart({ title, current, lower, higher }) {
               <XAxis dataKey="name" />
               <Area
                 type="monotone"
-                dataKey="pv"
+                dataKey="price"
                 stroke="#ff8f17"
                 fillOpacity={1}
                 fill="url(#colorUv)"
               />
               <ReferenceDot
-                x={data[data.length - 1].name}
-                y={data[data.length - 1].pv}
+                x={priceData[priceData.length - 1].name}
+                y={priceData[priceData.length - 1].price}
                 shape={CustomReferenceDot}
               />
             </AreaChart>
