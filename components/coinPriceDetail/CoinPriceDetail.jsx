@@ -8,7 +8,7 @@ function CoinPriceDetail({ img, name, title, amount, price, change }) {
   const [detailOpen, setDetailOpen] = useState(false);
 
   return (
-    <section className={styles.container}>
+    <section className="container">
       <div className={styles.namInfo}>
         <div className={styles.name}>
           <Image src={img} width={30} height={30} alt="coin" />
@@ -35,7 +35,7 @@ function CoinPriceDetail({ img, name, title, amount, price, change }) {
           <FontAwesomeIcon icon={faChevronDown} />
         )}
       </div>
-      <div className={styles.overalContainer}>
+      <div className={styles.overallContainer}>
         <div
           className={`${styles.ordersContainer} ${
             !detailOpen && styles.detailOpen

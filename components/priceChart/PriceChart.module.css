@@ -1,0 +1,23 @@
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aeb8c4;
+  width: 100%;
+}
+
+.priceContainer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.lower {
+  color: red;
+}
+
+.higher {
+  color: greenyellow;
+}

@@ -1,4 +1,6 @@
+"use client";
 import CoinPriceDetail from "../coinPriceDetail/CoinPriceDetail";
+import PriceChart from "../priceChart/PriceCahrt";
 import styles from "./CoinPage.module.css";
 
 function CoinPage() {
@@ -20,6 +22,7 @@ function CoinPage() {
         price={coin.price}
         change={coin.change}
       />
+      <PriceChart title="BTC" current={5.483} lower={4.895} higher={6.857} />
     </div>
   );
 }
