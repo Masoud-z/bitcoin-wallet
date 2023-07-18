@@ -21,16 +21,18 @@
 }
 .child {
   padding: 0 15px;
+  padding-bottom: 46px;
 }
 
 .footer {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px 2vw;
   background-color: #fff;
-  position: sticky;
-  top: 100vh;
+  position: fixed;
+  bottom: 0px;
 }
 
 .menuBtn {
