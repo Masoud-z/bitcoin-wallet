@@ -1,8 +1,8 @@
-"use client";
 import { useState } from "react";
 import CoinPriceDetail from "../coinPriceDetail/CoinPriceDetail";
 import PriceChart from "../priceChart/PriceChart";
 import styles from "./CoinPage.module.css";
+import OrderCTA from "../orderCTA/orderCTA";
 
 const coin = {
   img: "/bit.png",
@@ -105,6 +105,7 @@ function CoinPage() {
         higher={6.857}
         priceData={priceData}
       />
+      <OrderCTA title={coin.title} />
     </div>
   );
 }

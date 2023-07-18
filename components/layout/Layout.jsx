@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
