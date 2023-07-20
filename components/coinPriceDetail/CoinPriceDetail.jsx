@@ -35,12 +35,12 @@ function CoinPriceDetail({ img, name, title, amount, price, change }) {
           <FontAwesomeIcon icon={faChevronDown} />
         )}
       </div>
-      <div className={styles.overallContainer}>
-        <div
-          className={`${styles.ordersContainer} ${
-            !detailOpen && styles.detailOpen
-          }`}
-        >
+      <div
+        className={`${styles.overallContainer} ${
+          detailOpen && styles.openOverall
+        }`}
+      >
+        <div className={styles.ordersContainer}>
           <div className={styles.orders}>
             <div className={styles.orderBtn}>Buy</div>
             <div className={styles.orderBtn}>Sell</div>
