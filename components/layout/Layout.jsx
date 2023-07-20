@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,10 +15,14 @@ import { faFile, faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 import styles from "./Layout.module.css";
 
 function Layout(props) {
-  const searchParams = useSearchParams();
-
   const [activeMenu, setActiveMenu] = useState(false);
-  const pageName = searchParams.get("pageName");
+  const [pageName, setPageName] = useState("");
+
+  let searchParams;
+  useEffect(() => {
+    searchParams = new URLSearchParams(document.location.search);
+    setPageName(searchParams.get("pageName"));
+  });
 
   return (
     <>
@@ -51,9 +55,7 @@ function Layout(props) {
           </li>
         </ul>
       </header>
-      <div className={styles.child}>
-      {props.children}
-      </div>
+      <div className={styles.child}>{props.children}</div>
       <footer className={styles.footer}>
         <FontAwesomeIcon icon={faWallet} className={`${styles.btn} active`} />
         <FontAwesomeIcon icon={faCompass} className={styles.btn} />
