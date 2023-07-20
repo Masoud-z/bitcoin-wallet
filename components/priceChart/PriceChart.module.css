@@ -8,22 +8,26 @@
   align-items: center;
   color: #aeb8c4;
   width: 100%;
+  font-size: 12px;
+  font-size: 600;
 }
 
 .priceContainer > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
 }
 
 .lower {
-  color: red;
+  color: #ef2755;
+  width: 8px !important;
 }
 
 .higher {
-  color: greenyellow;
+  color: #1ec070;
+  width: 8px !important;
 }
 
 .chart {
@@ -42,6 +46,8 @@
   align-items: center;
   gap: 10px;
   color: #4c5968;
+  font-size: 12.84px;
+  font-weight: 600;
 }
 
 .liveDot {
