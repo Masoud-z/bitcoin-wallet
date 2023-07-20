@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .container > div {
@@ -13,6 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 12.84px;
+  font-weight: 600px;
 }
 
 .container > div:hover {
@@ -30,11 +32,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #2375ff;
+  background: linear-gradient(
+    0deg,
+    rgba(29, 114, 241, 1) 0%,
+    rgba(23, 200, 252, 1) 100%
+  );
 }
 
 .sell {
-  background-color: red !important;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 103, 124, 1) 0%,
+    rgba(251, 35, 162, 1) 100%
+  ) !important;
 }
 
 @media (max-width: 750px) {
