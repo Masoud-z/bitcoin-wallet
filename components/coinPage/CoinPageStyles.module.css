@@ -13,10 +13,11 @@
   justify-content: space-between;
   align-items: center;
   color: #aeb8c4;
+  font-size: 12px;
 }
 
 .period > div {
-  width: 70px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +31,6 @@
 }
 
 .active {
-  color: #fff;
+  color: #fff !important;
   background-color: #adb7c3;
 }
