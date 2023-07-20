@@ -21,7 +21,7 @@ body {
 }
 
 .active {
-  color: #585b5e;
+  color: #585b5e !important;
 }
 
 .container {
