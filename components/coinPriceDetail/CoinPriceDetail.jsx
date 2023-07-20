@@ -22,7 +22,7 @@ function CoinPriceDetail({ img, name, title, amount, price, change }) {
       <div className={styles.price}>
         ${price} USD
         <div className={`${styles.change} ${change < 0 && styles.minus}`}>
-          {change}
+          {change}%
         </div>
       </div>
       <div
