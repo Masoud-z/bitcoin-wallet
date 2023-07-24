@@ -1,5 +1,5 @@
 .header {
-  padding: 15px;
+  padding: 3.84vh 6.39vw;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -20,8 +20,8 @@
   font-size: 26px;
 }
 .child {
-  padding: 0 20px;
-  padding-bottom: 46px;
+  padding: 0 6.39vw;
+  padding-bottom: 9.82vh;
 }
 
 .footer {
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 2vw;
+  padding: 2.22vh 6.39vw;
   background-color: #fff;
   position: fixed;
   bottom: 0px;

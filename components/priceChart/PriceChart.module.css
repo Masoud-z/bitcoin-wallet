@@ -1,5 +1,6 @@
 .chartContainer {
   padding-left: 0;
+  position: relative;
 }
 
 .priceContainer {
@@ -34,13 +35,12 @@
   width: 100%;
   margin-left: -10px;
   margin-bottom: -28px;
-  position: relative;
 }
 
 .livePriceContainer {
   position: absolute;
-  bottom: 11vh;
-  left: 7vw;
+  bottom: 2.79vh;
+  left: 6.32vw;
   display: flex;
   justify-content: center;
   align-items: center;
